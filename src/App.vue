@@ -1,31 +1,79 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <Navigation :nav-links="navLinks"/>
+    <router-view/>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+<script>
+import Navigation from '@/components/Navigation.vue'
+
+export default {
+  components: {
+    Navigation
+  },
+  data: () => ({
+    navLinks: [
+      {
+        text: 'Home',
+        path: '/',
+        icon: 'ion-ios-home'
+      },
+      {
+        text: 'Services',
+        path: '/services',
+        icon: 'ion-ios-construct'
+      },
+      {
+        text: 'About',
+        path: '/about',
+        icon: 'ion-ios-information-circle'
+      },
+      {
+        text: 'Resume',
+        path: '/resume',
+        icon: 'ion-ios-document'
+      },
+      {
+        text: 'My Work',
+        path: '/mywork',
+        icon: 'ion-ios-briefcase'
+      },
+      {
+        text: 'Interests',
+        path: '/interests',
+        icon: 'ion-ios-happy'
+      },
+      {
+        text: 'Contact',
+        path: '/contact',
+        icon: 'ion-ios-mail'
+      },
+    ]
+  })
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+</script>
+
+<style>
+@import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 10px;
+  margin-inline-end: 0;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+body {
+  margin: 0;
 }
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
 </style>
