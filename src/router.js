@@ -11,6 +11,7 @@ const ROOT = '/rs-portfolio';
 const routes = [
     {
         path: `${ROOT}/home`,
+        alias: [`${ROOT}/`],
         name: "Home",
         component: Home,
     },
@@ -25,7 +26,7 @@ const routes = [
         component: Contact,
     },
     {
-        path:`${ROOT}/services`,
+        path: `${ROOT}/services`,
         name: "Services",
         component: Services,
     },
