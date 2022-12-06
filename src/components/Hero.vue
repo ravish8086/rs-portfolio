@@ -2983,4 +2983,22 @@ export default {
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 
+@media screen and (max-width: 759px) {
+  .image-stack__item--top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .image-stack__item--bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
 </style>

@@ -58,6 +58,42 @@
     top: 13%;
     left: 51%;
 }
+
 .rightPanel img {
     width: 420px;
+}
+
+@media screen and (max-width: 759px) {
+    .leftPanel {
+        float: inherit;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .rightPanel {
+        float: inherit;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .rightPanel img {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 759px) {
+    .leftPanel {
+        float: inherit;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .rightPanel {
+        float: inherit;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .rightPanel img {
+        width: 400px;
+    }
 }

@@ -14,7 +14,7 @@ export default {
     return {
       typeValue: "",
       typeStatus: false,
-      displayTextArray: ["Full Stack Developer", "Designer", "Youtuber", "Traveller", "Freelancer"],
+      displayTextArray: ["Full Stack Developer", "Designer", "Youtuber", "Traveler", "Freelancer"],
       typingSpeed: 100,
       erasingSpeed: 100,
       newTextDelay: 2000,
@@ -125,5 +125,23 @@ h1 span.typed-text {
   50% {
     color: var(--pencil);
   }
+}
+
+@media screen and (max-width: 759px) {
+  .blinking-cursor  {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  h1 span.typed-text {
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+
 }
 </style>
