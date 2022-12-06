@@ -10,6 +10,7 @@ import Resume from "@/views/Resume.vue";
 const routes = [
     {
         path: "/",
+        alias: ["/rs-portfolio"],
         name: "Home",
         component: Home,
     },
