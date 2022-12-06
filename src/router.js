@@ -7,40 +7,40 @@ import Interests from "@/views/Interests.vue";
 import MyWork from "@/views/MyWork.vue";
 import Resume from "@/views/Resume.vue";
 
+const ROOT = '/rs-portfolio';
 const routes = [
     {
-        path: "/",
-        alias: ["/rs-portfolio"],
+        path: `${ROOT}/home`,
         name: "Home",
         component: Home,
     },
     {
-        path: "/about",
+        path: `${ROOT}/about`,
         name: "About",
         component: About,
     },
     {
-        path: "/contact",
+        path: `${ROOT}/contact`,
         name: "Contact",
         component: Contact,
     },
     {
-        path: "/services",
+        path:`${ROOT}/services`,
         name: "Services",
         component: Services,
     },
     {
-        path: "/mywork",
+        path: `${ROOT}/mywork`,
         name: "My Work",
         component: MyWork,
     },
     {
-        path: "/interests",
+        path: `${ROOT}/interests`,
         name: "Interests",
         component: Interests,
     },
     {
-        path: "/resume",
+        path: `${ROOT}/resume`,
         name: "Resume",
         component: Resume,
     },

@@ -8,45 +8,47 @@
 <script>
 import Navigation from '@/components/Navigation.vue'
 
+const ROOT = '/rs-portfolio'
 export default {
   components: {
     Navigation
   },
   data: () => ({
+    ROOT : '/rs-portfolio',
     navLinks: [
       {
         text: 'Home',
-        path: '/',
+        path: `${ROOT}/home`,
         icon: 'ion-ios-home'
       },
       {
         text: 'Services',
-        path: '/services',
+        path: `${ROOT}/services`,
         icon: 'ion-ios-construct'
       },
       {
         text: 'About',
-        path: '/about',
+        path: `${ROOT}/about`,
         icon: 'ion-ios-information-circle'
       },
       {
         text: 'Resume',
-        path: '/resume',
+        path: `${ROOT}/resume`,
         icon: 'ion-ios-document'
       },
       {
         text: 'My Work',
-        path: '/mywork',
+        path: `${ROOT}/mywork`,
         icon: 'ion-ios-briefcase'
       },
       {
         text: 'Interests',
-        path: '/interests',
+        path: `${ROOT}/interests`,
         icon: 'ion-ios-happy'
       },
       {
         text: 'Contact',
-        path: '/contact',
+        path: `${ROOT}/contact`,
         icon: 'ion-ios-mail'
       },
     ]
