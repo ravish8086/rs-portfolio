@@ -74,8 +74,8 @@ h1 span.typed-text {
 }
 
 .blinking-cursor {
-  font-size: 6rem;
-  color: #2c3e50;
+  font-size: 4rem;
+  color: var(--pencil);
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -o-animation: 1s blink step-end infinite;
@@ -87,7 +87,7 @@ h1 span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: var(--pencil);
   }
 }
 
@@ -96,7 +96,7 @@ h1 span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: var(--pencil);
   }
 }
 
@@ -105,7 +105,7 @@ h1 span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: var(--pencil);
   }
 }
 
@@ -114,16 +114,16 @@ h1 span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: var(--pencil);
   }
 }
 
 @-o-keyframes blink {
   from, to {
-    color: transparent;
+    color: var(--pencil);
   }
   50% {
-    color: #2c3e50;
+    color: var(--pencil);
   }
 }
 </style>
