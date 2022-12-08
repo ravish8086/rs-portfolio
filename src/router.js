@@ -32,7 +32,7 @@ const routes = [
     },
     {
         path: `${ROOT}/mywork`,
-        name: "My Work",
+        name: "Work",
         component: MyWork,
     },
     {

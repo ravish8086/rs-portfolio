@@ -2822,11 +2822,6 @@ export default {
 }
 </script>
 <style>
-@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
-
-* {
-  box-sizing: border-box;
-}
 
 .image-stack {
   position: relative;

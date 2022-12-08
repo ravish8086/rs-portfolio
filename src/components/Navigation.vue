@@ -2,7 +2,7 @@
   <nav>
     <ul ref="nav">
       <figure class="image-logo" @click="toggleNav">
-        <img src="@/assets/vue.svg" alt="Ravi Portfolio"/>
+        <img src="@/assets/logo.png" alt="Ravi Portfolio" class="logo"/>
       </figure>
       <li v-for="(link, index) in navLinks" :key="index">
         <router-link :to="link.path" style="color: var(--primary)">

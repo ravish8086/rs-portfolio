@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
-
 nav {
     height: 60px;
     width: 100%;
@@ -44,6 +42,10 @@ nav li:hover {
     animation: line 2.5s;
 }
 
+.logo {
+    width: 3em;
+}
+
 @media screen and (max-width: 759px) {
     nav ul {
         position: absolute;
@@ -73,6 +75,12 @@ nav li:hover {
         justify-content: space-between;
         margin-right: 13px;
     }
+
+    .logo {
+        width: 3em;
+        position: relative;
+    }
+
 }
 
 @keyframes line {

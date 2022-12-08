@@ -1,30 +1,44 @@
+@import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  --primary: #6C4AB6;
-  --secondary: #8D72E1;
-  --accent: #8D9EFF;
-  --tersary: #B9E0FF;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    --primary: #6C4AB6;
+    --secondary: #8D72E1;
+    --accent: #8D9EFF;
+    --tersary: #B9E0FF;
 
-  --shade: #f2f2f2;
-  --dark-shade: #ddd;
-  --dark-page: #121212;
-  --pencil: #b64a97;
+    --shade: #f2f2f2;
+    --dark-shade: #ddd;
+    --dark-page: #121212;
+    --pencil: #b64a97;
 
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-  background: var(--shade);
-  color-scheme: light;
-  color: rgba(255, 255, 255, 0.87);
+    --success: #2ecc71;
+    --error: #e74c3c;
 
 
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    background: var(--shade);
+    color-scheme: light;
+    color: rgba(255, 255, 255, 0.87);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.workspace {
+    margin: 50px;
 }
 
 

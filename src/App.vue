@@ -37,7 +37,7 @@ export default {
         icon: 'ion-ios-document'
       },
       {
-        text: 'My Work',
+        text: 'Work',
         path: `${ROOT}/mywork`,
         icon: 'ion-ios-briefcase'
       },
@@ -57,8 +57,6 @@ export default {
 </script>
 
 <style>
-@import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
-
 figure {
   margin-block-start: 0;
   margin-block-end: 0;
