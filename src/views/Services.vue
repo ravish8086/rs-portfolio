@@ -1,5 +1,6 @@
 <template>
-  <div>
-    <h1>This is an services page</h1>
-  </div>
+  <section class="workspace">
+    <h1>Services</h1>
+
+  </section>
 </template>

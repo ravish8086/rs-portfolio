@@ -2981,10 +2981,9 @@ export default {
 @media screen and (max-width: 759px) {
   .image-stack__item--top {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 90px;
+    top: 60px;
     width: 100%;
-    padding-top: 50px;
   }
 
   .image-stack__item--bottom {
