@@ -6,23 +6,20 @@
         <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
           <div class="contact-left">
             <div class="media">
-              <i class="ion-ios-mail"></i>
+              <i class="material-icons">email</i>
               <div class="media-body"><span>ravi8086@bu.edu</span></div>
             </div>
             <div class="media">
-              <i class="ion-ios-call"></i>
+              <i class="material-icons">call</i>
               <div class="media-body"><span>512-915-2055</span></div>
             </div>
             <div class="media">
-              <i class="ion-logo-skype"></i>
-              <div class="media-body"><span>ravish.8086</span></div>
-            </div>
-            <div class="media">
               <a href="https://github.com/ravish8086" target="_blank" class="icon-block">
-                <i class="ion-logo-github"></i>
+                <img src="@/assets/img/github-48.svg"/>
               </a>
+
               <a href="https://www.linkedin.com/in/ravish8086" target="_blank" style="padding-left: 10px">
-                <i class="ion-logo-linkedin"></i>
+                <img src="@/assets/img/linkedin-48.svg"/>
               </a>
             </div>
           </div>
@@ -35,8 +32,8 @@
                        class="form-control"
                        v-model="contactForm.name"
                 >
-                <i class="ion-ios-checkmark-circle"></i>
-                <i class="ion-ios-alert"></i>
+                <i class="material-icons check">check_circle</i>
+                <i class="material-icons error">error</i>
                 <small>Error message</small>
               </div>
             </div>
@@ -48,8 +45,8 @@
                        class="form-control"
                        v-model="contactForm.email"
                 >
-                <i class="ion-ios-checkmark-circle"></i>
-                <i class="ion-ios-alert"></i>
+                <i class="material-icons check">check_circle</i>
+                <i class="material-icons error">error</i>
                 <small>Error message</small>
               </div>
             </div>
@@ -60,8 +57,8 @@
                        class="form-control"
                        v-model="contactForm.subject"
                 >
-                <i class="ion-ios-checkmark-circle"></i>
-                <i class="ion-ios-alert"></i>
+                <i class="material-icons check">check_circle</i>
+                <i class="material-icons error">error</i>
                 <small>Error message</small>
               </div>
             </div>
@@ -73,8 +70,8 @@
                           v-model="contactForm.message"
                 >
                 </textarea>
-                <i class="ion-ios-checkmark-circle"></i>
-                <i class="ion-ios-alert"></i>
+                <i class="material-icons check">check_circle</i>
+                <i class="material-icons error">error</i>
                 <small>Error message</small>
               </div>
             </div>
@@ -221,16 +218,16 @@ export default {
 .form-group i {
   visibility: hidden;
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 20px;
 }
 
-.form-group.success i.ion-ios-checkmark-circle {
+.form-group.success i.check {
   color: var(--success);
   visibility: visible;
 }
 
-.form-group.error i.ion-ios-alert {
+.form-group.error i.error {
   color: var(--error);
   visibility: visible;
 }

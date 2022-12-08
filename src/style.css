@@ -1,7 +1,3 @@
-@import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
-@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
-
 :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -38,16 +34,12 @@
 }
 
 .workspace {
-    margin-left: 200px;
-    margin-top: 50px;
-    margin-right: 200px;
+    margin: 50px 200px;
 }
 
 @media screen and (max-width: 759px) {
     .workspace {
-        margin-left: 80px;
-        margin-top: 50px;
-        margin-right: 0;
+        margin: 50px 0 50px 80px;
     }
 }
 

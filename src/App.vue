@@ -19,37 +19,37 @@ export default {
       {
         text: 'Home',
         path: `${ROOT}/home`,
-        icon: 'ion-ios-home'
-      },
-      {
-        text: 'Services',
-        path: `${ROOT}/services`,
-        icon: 'ion-ios-construct'
+        icon: 'home'
       },
       {
         text: 'About',
         path: `${ROOT}/about`,
-        icon: 'ion-ios-information-circle'
+        icon: 'engineering'
+      },
+      {
+        text: 'Services',
+        path: `${ROOT}/services`,
+        icon: 'design_services'
       },
       {
         text: 'Resume',
         path: `${ROOT}/resume`,
-        icon: 'ion-ios-document'
+        icon: 'contact_page'
       },
       {
         text: 'Work',
         path: `${ROOT}/mywork`,
-        icon: 'ion-ios-briefcase'
+        icon: 'work'
       },
       {
         text: 'Interests',
         path: `${ROOT}/interests`,
-        icon: 'ion-ios-happy'
+        icon: 'interests'
       },
       {
         text: 'Contact',
         path: `${ROOT}/contact`,
-        icon: 'ion-ios-mail'
+        icon: 'contact_mail'
       },
     ]
   })

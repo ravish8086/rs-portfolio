@@ -7,7 +7,7 @@
       <li v-for="(link, index) in navLinks" :key="index">
         <router-link :to="link.path" style="color: var(--primary)">
           {{ link.text }}
-          <i :class="link.icon"/>
+          <i class="material-icons">{{link.icon}}</i>
         </router-link>
       </li>
     </ul>

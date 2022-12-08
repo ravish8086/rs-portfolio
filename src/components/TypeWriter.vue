@@ -14,7 +14,7 @@ export default {
     return {
       typeValue: "",
       typeStatus: false,
-      displayTextArray: ["Full Stack Developer", "Designer", "Youtuber", "Traveler", "Freelancer"],
+      displayTextArray: ["Full Stack Developer", "Designer", "AI-ML Enthusiast", "Certified Professional", "Freelancer"],
       typingSpeed: 100,
       erasingSpeed: 100,
       newTextDelay: 2000,
