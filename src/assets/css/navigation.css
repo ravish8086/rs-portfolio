@@ -47,20 +47,26 @@ nav li:hover {
 }
 
 @media screen and (max-width: 759px) {
+    nav {
+        height: 0 !important;
+    }
+
     nav ul {
         position: absolute;
         width: 300px;
         flex-direction: column;
         left: -240px;
         transition: 300ms ease all;
-        top: 60px;
+        top: 0;
     }
 
     nav ul figure {
-        position: fixed;
-        z-index: 1;
-        top: 10px;
-        left: 2px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        cursor: pointer;
+        margin: 10px 20px 10px 10px;
+        text-align: right;
     }
 
     nav ul li {
@@ -77,7 +83,6 @@ nav li:hover {
     }
 
     .logo {
-        width: 3em;
         position: relative;
     }
 

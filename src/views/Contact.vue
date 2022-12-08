@@ -129,20 +129,18 @@ export default {
     formSubmit() {
       this.showSubmitFeedback = false;
       this.errors = [];
-      if (!this.validate()) {
+      if (this.validate()) {
         this.showSubmitFeedback = true;
       }
       console.log(this.contactForm);
     },
 
     validate() {
-      let error;
-      error = this.validateText(this.selectors.name, this.contactForm.name, 'Name');
-      error = this.validateEmail(this.selectors.email, this.contactForm.email, 'Email');
-      error = this.validateText(this.selectors.subject, this.contactForm.subject, 'Subject');
-      error = this.validateText(this.selectors.message, this.contactForm.message, 'Message');
-
-      return !!error;
+      const nameError = this.validateText(this.selectors.name, this.contactForm.name, 'Name');
+      const emailError = this.validateEmail(this.selectors.email, this.contactForm.email, 'Email');
+      const subError = this.validateText(this.selectors.subject, this.contactForm.subject, 'Subject');
+      const mesError = this.validateText(this.selectors.message, this.contactForm.message, 'Message');
+      return !nameError && !emailError && !subError && !mesError;
     },
 
     validateText(field, value, name) {
@@ -212,6 +210,14 @@ export default {
   border-color: var(--error);
 }
 
+.form-group.success textarea {
+  border-color: var(--success);
+}
+
+.form-group.error textarea {
+  border-color: var(--error);
+}
+
 .form-group i {
   visibility: hidden;
   position: absolute;
@@ -239,4 +245,9 @@ export default {
   padding: 10px;
 }
 
+@media screen and (max-width: 759px) {
+  .contact-form {
+    margin-top: 20px;
+  }
+}
 </style>

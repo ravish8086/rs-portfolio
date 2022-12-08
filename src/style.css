@@ -41,4 +41,11 @@
     margin: 50px;
 }
 
+@media screen and (max-width: 759px) {
+    .workspace {
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+}
+
 
