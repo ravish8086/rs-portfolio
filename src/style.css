@@ -42,9 +42,39 @@ body {
     margin: 50px 200px;
 }
 
+.content-header {
+    padding: 5px 15px 5px 15px;
+}
+
+.content-header p {
+    padding: 5px 15px 5px 15px;
+}
+
+.content-section {
+    padding: 5px 15px 5px 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+.wrapper > div {
+    margin: 20px;
+}
+
 @media screen and (max-width: 759px) {
     .workspace {
         margin: 50px 0 50px 80px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper > div {
+        margin: 0;
     }
 }
 
@@ -56,7 +86,7 @@ body {
 }
 
 .tabular-data td, .tabular-data th {
-    border: 1px solid var(--dark-shade);
+    border: 1px solid var(--primary);
     padding: 8px;
 }
 
@@ -75,5 +105,28 @@ body {
     background-color: var(--secondary);
     color: white;
 }
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
 
 

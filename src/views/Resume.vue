@@ -5,7 +5,7 @@
       <a v-bind:href="`https://raw.githubusercontent.com/ravish8086/rs-portfolio/main/src/assets/docs/resume.pdf`"
          target="_blank" rel="noopener noreferrer">Download Resume</a>
     </span>
-    <section class="about-section">
+    <section class="content-section">
       <h3>Work Experience & Education</h3>
       <div class="resume-container">
         <div class="item">
@@ -168,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section class="about-section">
+    <section class="content-section">
       <h3>Certification</h3>
       <main class="grid">
         <article>
@@ -197,77 +197,14 @@
         </article>
       </main>
     </section>
-    <section class="about-section">
-      <h3>Technical Skills</h3>
-      <table class="tabular-data">
-        <tbody>
-        <tr>
-          <td>
-            <strong>Language/Frameworks</strong>
-          </td>
-          <td>
-            Java, J2EE, JavaScript, Node JS, HTML, Express JS, Spring, Spring Batch, Hibernate, Jasper/iReports,
-            Junit, Selenium
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <strong>UI Technology</strong>
-          </td>
-          <td>
-            Vue JS, Quasar, Angular, jQuery, CSS, XML, JSON, Ajax
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Tools</strong>
-          </td>
-          <td>
-            Intellij, Webstorm, Eclipse, STS, Ant, CVS, SVN, Git, Jenkins, PMD, Check-style, Putty,
-            Cygwin, Rally, Sonar, Bamboo, Splunk
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Platforms</strong>
-          </td>
-          <td>
-            Databases (MySQL, Oracle 10g, 11g), MongoDB
-            OS (Linux, Windows), Servers (Tomcat, JBoss), Containers (Docker engine)
-            Openstack
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Design skills</strong>
-          </td>
-          <td>
-            OOD (Object Oriented Design), AOP (Aspect Oriented Programming), Design patterns and UML.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Software Development </strong>
-          </td>
-          <td>
-            Agile methodology (JIRA), RALLY
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Cloud Technologies</strong>
-          </td>
-          <td>
-            AWS, Heroku, Openshift, Oracle Cloud, Azure
-          </td>
-        </tr>
-        </tbody>
-      </table>
+    <section class="content-section">
+      <h3>Technical Skills & Strength</h3>
+
     </section>
   </div>
 </template>
 <style>
-div.resume-container {
+.resume-container {
   display: flex;
   flex: auto;
   flex-direction: column;

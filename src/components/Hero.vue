@@ -4,7 +4,7 @@
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
            x="0px" y="0px"
            viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
-<g id="jjperezaguinaga">
+<g id="abc">
 	<g id="countryObjects">
 		<path fill="#F15C27" d="M124.467,134.068c-2.028,2.304-3.916,4.723-5.74,7.187c-0.104,0.155-0.359,0.16-0.568,0.012l-14.95-10.734
 			c-0.208-0.149-0.431-0.462-0.492-0.699c-0.699-2.659-1.231-5.311-1.771-8.085c-0.046-0.243,0.114-0.458,0.359-0.476
@@ -2896,85 +2896,58 @@ export default {
 }
 
 #airplane2, #airplane1 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 60s linear 0s infinite;
 }
 
 #countryObjects {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 240s linear 0s infinite;
 }
 
 #floatingGlobe {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-left 360s linear 0s infinite;
 }
 
 #globe {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: hover 0s linear 0s infinite;
 }
 
 #windmill {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 331px 201px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 2s linear 0s infinite;
 }
 
 #cloud1 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: hover 3s linear 1s infinite;
 }
 
 #cloud2 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: hover 3s linear 2s infinite;
 }
 
 #cloud3 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: hover 3s linear 3s infinite;
 }
 
 #circle1 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 
-#circle2 {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-animation: rotate-left 24s linear 0s infinite;
-}
-
 #circle3 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 
 #circle4 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-left 24s linear 0s infinite;
 }
 
 #circle5 {
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 200px 200px;
-  -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 

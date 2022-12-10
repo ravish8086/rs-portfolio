@@ -1,7 +1,7 @@
 <template>
   <div class="workspace">
     <h1>About</h1>
-    <header class="about-header">
+    <header class="content-header">
       <div class="wrapper">
         <div class="portfolio">
           <img src="@/assets/img/hero.png" alt="Ravi Shankar Photo">
@@ -35,41 +35,13 @@
   </div>
 </template>
 <style>
-.about-header {
-  padding: 5px 15px 5px 15px;
-}
-
-.about-header p {
-  padding: 5px 15px 5px 15px;
-}
-
-.about-section {
-  padding: 5px 15px 5px 15px;
-}
-
 .portfolio img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: left;
-}
-
-.wrapper > div {
-  margin: 20px;
-}
-
 @media screen and (max-width: 759px) {
-  .wrapper {
-    flex-direction: column;
-  }
-  .wrapper > div {
-    margin: 0px;
-  }
   .portfolio {
     padding-left: 4rem;
   }
