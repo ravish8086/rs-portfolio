@@ -1,7 +1,10 @@
 <template>
   <div class="workspace">
     <h1>Resume</h1>
-    <span><a v-bind:href="`src/assets/docs/resume.pdf`" target="_blank">Download Resume</a></span>
+    <span>
+      <a v-bind:href="`https://raw.githubusercontent.com/ravish8086/rs-portfolio/main/src/assets/docs/resume.pdf`"
+         target="_blank" rel="noopener noreferrer">Download Resume</a>
+    </span>
     <section class="about-section">
       <h3>Work Experience & Education</h3>
       <div class="resume-container">
@@ -29,8 +32,8 @@
                 <section>
                   <h4>January to May</h4>
                   <ul>
-                    <li>Continued working as a consultant at Cisco on Real Time link Backup project. </li>
-                    <li>Gained full hands on with Node Js and Angular. </li>
+                    <li>Continued working as a consultant at Cisco on Real Time link Backup project.</li>
+                    <li>Gained full hands on with Node Js and Angular.</li>
                   </ul>
                 </section>
               </section>
@@ -46,9 +49,11 @@
                 <section>
                   <h4>January to May</h4>
                   <ul>
-                    <li>Continued working as a consultant at Visa Inc on Application Request Manager. </li>
-                    <li>Gained experience in Open ID connect with DPS Bank integration. Worked on various Auth and modules </li>
-                    <li>Improved the business knowledge w.r.t How Payment Industry works  </li>
+                    <li>Continued working as a consultant at Visa Inc on Application Request Manager.</li>
+                    <li>Gained experience in Open ID connect with DPS Bank integration. Worked on various Auth and
+                      modules
+                    </li>
+                    <li>Improved the business knowledge w.r.t How Payment Industry works</li>
                   </ul>
                 </section>
               </section>
