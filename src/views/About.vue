@@ -63,4 +63,16 @@
   margin: 20px;
 }
 
+@media screen and (max-width: 759px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper > div {
+    margin: 0px;
+  }
+  .portfolio {
+    padding-left: 4rem;
+  }
+}
+
 </style>
