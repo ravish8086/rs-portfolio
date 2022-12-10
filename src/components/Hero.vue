@@ -2812,7 +2812,7 @@
 </svg>
     </div>
     <div class="image-stack__item image-stack__item--top">
-      <img src="@/assets/img/hero_right-nobg.png" alt="Hero">
+      <img src="@/assets/img/hero_nobg.png" alt="Hero">
     </div>
   </div>
 </template>
