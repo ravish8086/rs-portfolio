@@ -199,7 +199,78 @@
     </section>
     <section class="content-section">
       <h3>Technical Skills & Strength</h3>
-
+      <div class="row">
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>Java/J2EE</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:90%"><span>90%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>Spring</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:90%"><span>90%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>HTML5</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:95%"><span>95%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>JavaScript</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:90%"><span>90%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>TypeScript</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:80%"><span>80%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>CSS</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:90%"><span>90%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>Vue JS</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:87%"><span>87%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>Angular</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:85%"><span>85%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>Design Patterns</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:80%"><span>80%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-wrap"><h5>Database</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width:85%"><span>85%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -319,5 +390,52 @@
 
 #timeline section.year section ul li:not(:first-child) {
   margin-top: 0.5rem;
+}
+
+.progress-wrap {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.progress-wrap h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.progress {
+  height: 6px;
+  background: var(--accent);
+  overflow: visible;
+}
+
+.progress-bar {
+  background: var(--primary);
+  position: relative;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  overflow: visible;
+  border-radius: 2px;
+}
+
+.progress-bar::after {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: -38px;
+  right: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 </style>
