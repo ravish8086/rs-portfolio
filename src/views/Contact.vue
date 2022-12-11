@@ -83,7 +83,7 @@
           </form>
           <article v-show="showSubmitFeedback">
             <div class="message-body">
-              Thank you for contacting me. Your message is received, I will connect with you at the earliest.
+              {{ submitResponse }}
             </div>
           </article>
         </div>
@@ -112,14 +112,15 @@ export default {
       },
       showSubmitFeedback: false,
       errors: [],
-      ALPHA_REGEX: /^[A-Za-z]+$/,
+      ALPHA_REGEX: /^[a-zA-Z]+(?:[\s.]+[a-zA-Z]+)*$/,
       EMAIL_REGEX: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
       contactForm: {
         name: '',
         email: '',
         subject: '',
         message: ''
-      }
+      },
+      submitResponse: ''
     }
   },
   methods: {
@@ -127,9 +128,18 @@ export default {
       this.showSubmitFeedback = false;
       this.errors = [];
       if (this.validate()) {
-        this.showSubmitFeedback = true;
+        this.submitForm()
+            .then((result) => {
+              this.showSubmitFeedback = true;
+              console.log(result);
+              this.submitResponse = `Message Id : ${result.name}. Thank you for contacting me. Your message is received, I will connect with you at the earliest.`;
+            })
+            .catch(error => {
+              this.showSubmitFeedback = true;
+              this.submitResponse = 'Oops, its not your fault. Its me. Please try again later';
+            });
       }
-      console.log(this.contactForm);
+
     },
 
     validate() {
@@ -177,6 +187,25 @@ export default {
       small.innerText = message;
       return true;
     },
+
+    async submitForm() {
+      const url = 'https://rs-portfolio-dd94b-default-rtdb.firebaseio.com/contact.json';
+      const http_req_headers = {
+        'Cache-control': 'no-cache',
+        'Accept': 'text/plain',
+        'Content-Type': 'application/json'
+      };
+
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: http_req_headers,
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        body: JSON.stringify(this.contactForm)
+      });
+      return response.json();
+    }
 
   }
 }
