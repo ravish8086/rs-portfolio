@@ -1,7 +1,25 @@
-# Vue 3 + Vite
+# RS Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A Portfolio website build using Vue 3 in Vite.
 
-## Recommended IDE Setup
+### Technology Used
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Vue](https://vuejs.org/) + [Vite](https://vitejs.dev/) 
+- [JavaScript](https://www.w3schools.com/js/)
+- [CSS](https://www.w3schools.com/css/)
+- [HTML](https://www.w3schools.com/html/)
+- [Git](https://github.com/) - For Code repository
+- [Firebase](https://firebase.google.com/) - For deployment and real-time database
+
+### Skills showcase
+
+- Dynamic Use of CSS and Media Query
+- Built a fully responsive website with plain CSS and HTML
+- No external JavaScript
+- Dynamic DOM manipulation to change the rendered object state and behavior
+- ES6 features is widely used.
+- Well-designed Page layouts
+
+### Project Link
+
+https://rs-portfolio-dd94b.web.app/
