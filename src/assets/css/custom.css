@@ -64,9 +64,7 @@ button, input, optgroup, select, textarea {
 
 @media (min-width: 576px) {
     .col-sm {
-        -ms-flex-preferred-size: 0;
         flex-basis: 0;
-        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%
     }
@@ -276,9 +274,7 @@ button, input, optgroup, select, textarea {
 
 @media (min-width: 768px) {
     .col-md {
-        -ms-flex-preferred-size: 0;
         flex-basis: 0;
-        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%
     }
@@ -488,9 +484,7 @@ button, input, optgroup, select, textarea {
 
 @media (min-width: 992px) {
     .col-lg {
-        -ms-flex-preferred-size: 0;
         flex-basis: 0;
-        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%
     }
@@ -700,9 +694,7 @@ button, input, optgroup, select, textarea {
 
 @media (min-width: 1200px) {
     .col-xl {
-        -ms-flex-preferred-size: 0;
         flex-basis: 0;
-        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%
     }

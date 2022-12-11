@@ -128,7 +128,7 @@ h1 span.typed-text {
 }
 
 @media screen and (max-width: 759px) {
-  .blinking-cursor  {
+  .blinking-cursor {
     font-size: 2rem;
   }
 
