@@ -11,7 +11,7 @@ A Portfolio website build using Vue 3 in Vite.
 - [Git](https://github.com/) - For Code repository
 - [Firebase](https://firebase.google.com/) - For deployment and real-time database
 
-### Skills showcase
+### Technical Features
 
 - Dynamic Use of CSS and Media Query
 - Built a fully responsive website with plain CSS and HTML
@@ -20,6 +20,8 @@ A Portfolio website build using Vue 3 in Vite.
 - ES6 features is widely used.
 - Well-designed Page layouts
 
-### Project Link
+### Links
 
-https://rs-portfolio-dd94b.web.app/
+- Hosted - https://rs-portfolio-dd94b.web.app/
+- Code - https://github.com/ravish8086/rs-portfolio
+- 
