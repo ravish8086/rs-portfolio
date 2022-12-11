@@ -15,11 +15,11 @@
             </div>
             <div class="media">
               <a href="https://github.com/ravish8086" target="_blank" class="icon-block">
-                <img src="src/assets/img/social-github.svg" alt="Github SVG image"/>
+                <img src="@/assets/img/social-github.svg" alt="Github SVG image"/>
               </a>
 
               <a href="https://www.linkedin.com/in/ravish8086" target="_blank" style="padding-left: 10px">
-                <img src="src/assets/img/social-linkedin.svg" alt="LinkedIn SVG Image"/>
+                <img src="@/assets/img/social-linkedin.svg" alt="LinkedIn SVG Image"/>
               </a>
             </div>
           </div>
