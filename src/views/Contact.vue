@@ -143,7 +143,7 @@ export default {
     formSubmit() {
       this.showSubmitFeedback = false;
       this.errors = [];
-      // if (this.validate()) {
+      if (this.validate()) {
         this.submitForm()
             .then((result) => {
               this.showSubmitFeedback = true;
@@ -158,7 +158,7 @@ export default {
               this.showSubmitFeedback = true;
               this.submitResponse = 'Oops, its not your fault. Its me. Please try again later';
             });
-      // }
+      }
 
     },
 
