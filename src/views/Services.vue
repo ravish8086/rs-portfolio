@@ -62,45 +62,4 @@
   </section>
 </template>
 <style>
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
-
-}
-
-.grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  margin-right: 20px;
-}
-
-.grid > article img {
-  max-width: 100%;
-}
-
-.text {
-  padding: 0 20px 20px;
-}
-
-.text > button {
-  background: gray;
-  border: 0;
-  color: white;
-  padding: 10px;
-  width: 100%;
-}
-
-.card-img i {
-  font-size: 3em;
-  padding-top: 15px;
-  color: var(--primary);
-}
-
-@media screen and (max-width: 759px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-}
 </style>
