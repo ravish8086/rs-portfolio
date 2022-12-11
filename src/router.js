@@ -11,7 +11,7 @@ const ROOT = '/rs-portfolio';
 const routes = [
     {
         path: `${ROOT}/home`,
-        alias: [`${ROOT}/`],
+        alias: [`${ROOT}/`, `/`],
         name: "Home",
         component: Home,
     },

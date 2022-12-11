@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/rs-portfolio/',
+    base: '/',
     plugins: [vue()],
     resolve: {
         alias: {

@@ -31,7 +31,7 @@ export default {
         technology: ['Node', 'Vue', 'Vite', 'HTML5', 'CSS', 'JavaScript']
       }, {
         title: 'Home Vaastu',
-        detail: 'Maximise the Home enery by analysing the directions',
+        detail: 'Maximise the Home energy by analysing the directions',
         tag: 'house',
         technology: ['Angular', 'Spring', 'HTML5', 'CSS', 'JavaScript']
 
@@ -44,7 +44,7 @@ export default {
         title: 'Pizza-ma-la',
         detail: 'Find nearest Pizza store',
         tag: 'pizza',
-        technology: ['Nest Js', 'Vite', 'Vue 3', 'Tailswaind', 'HTML5', 'TypeScript']
+        technology: ['Nest Js', 'Vite', 'Vue 3', 'Tailswind CSS', 'HTML5', 'TypeScript']
       }, {
         title: 'Trending Games',
         detail: 'Find the latest trending online games',
@@ -66,7 +66,6 @@ export default {
       let currentIndex = array.length, randomIndex;
 
       while (currentIndex != 0) {
-
         // Pick a remaining element.
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;

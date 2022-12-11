@@ -1,5 +1,6 @@
 <template>
   <div>
-    <h1>This is an interest page</h1>
+    <h1>Interests</h1>
+    
   </div>
 </template>

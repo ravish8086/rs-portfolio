@@ -8,7 +8,9 @@
         </div>
         <div>
           <p>
-            I am Ravi Shankar. I have around 14 years of industry experience as a full-stack software engineer in
+            I am Ravi Shankar. I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and
+            User Friendly UI, Developed by Modular, Scalable and Functional Code. I have around 14 years of industry
+            experience as a full-stack software engineer in
             building and designing robust software and application. Currently, I am working as Lead Engineer in a
             company leading in Payment Industry, located in Austin Texas.
             I have been involved in all phases of Software Development
@@ -17,8 +19,7 @@
           </p>
           <p>
             My Passion is designing, coding, building application from scratch. I have achieved following
-            certification
-            while progressing in my carrier :
+            certification while progressing in my carrier :
           </p>
           <ul>
             <li>Spring Source Certified Spring Professional</li>
