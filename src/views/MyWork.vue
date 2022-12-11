@@ -6,7 +6,8 @@
         <RandomImage :imageURL="project.imageURL"
                      :altName="project.tag"
                      :projectTitle="project.title"
-                     :projectDetail="project.detail">
+                     :projectDetail="project.detail"
+                     :technology="project.technology">
 
         </RandomImage>
       </article>
@@ -25,35 +26,41 @@ export default {
     return {
       projects: [{
         title: 'Car Pool',
-        detail: 'Carpooling is the sharing of car journeys so that more than one person travels in a car',
-        tag: 'car'
+        detail: 'Carpooling is the sharing of car journeys',
+        tag: 'car',
+        technology: ['Node', 'Vue', 'Vite', 'HTML5', 'CSS', 'JavaScript']
       }, {
         title: 'Home Vaastu',
         detail: 'Maximise the Home enery by analysing the directions',
-        tag: 'house'
+        tag: 'house',
+        technology: ['Angular', 'Spring', 'HTML5', 'CSS', 'JavaScript']
 
       }, {
         title: 'Book-e-nova',
         detail: 'Provide the context, and you will get suggestion which book to read',
-        tag: 'book'
+        tag: 'book',
+        technology: ['SpringBoot', 'Angular Material', 'HTML5', 'TypeScript']
       }, {
         title: 'Pizza-ma-la',
         detail: 'Find nearest Pizza store',
-        tag: 'pizza'
+        tag: 'pizza',
+        technology: ['Nest Js', 'Vite', 'Vue 3', 'Tailswaind', 'HTML5', 'TypeScript']
       }, {
         title: 'Trending Games',
         detail: 'Find the latest trending online games',
-        tag: 'game'
+        tag: 'game',
+        technology: ['Node', 'Bootstrap', 'HTML5', 'TypeScript']
       }, {
         title: 'Movie Critic',
         detail: 'Get the latest movie Critics',
-        tag: 'movie'
+        tag: 'movie',
+        technology: ['Node', 'Vue', 'Quasar Framework', 'TypeScript']
       }]
     };
   },
   methods: {
     getImage(tag: string) {
-      return `https://api.lorem.space/image/${tag}?w=300&h=220&a${Math.random()}`;
+      return `https://api.lorem.space/image/${tag}?w=300&h=220&a=${Math.random()}`;
     },
     shuffle(array: any) {
       let currentIndex = array.length, randomIndex;
