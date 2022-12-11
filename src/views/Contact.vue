@@ -52,6 +52,18 @@
             </div>
             <div class="col-xs-12 col-sm-12">
               <div class="form-group">
+                <input id="phone" name="phone"
+                       placeholder="(123) 456-7890"
+                       class="form-control"
+                       v-model="contactForm.phone"
+                >
+                <i class="material-icons check">check_circle</i>
+                <i class="material-icons error">error</i>
+                <small>Error message</small>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12">
+              <div class="form-group">
                 <input id="subject" name="subject"
                        placeholder="Enter the discussion title"
                        class="form-control"
@@ -98,6 +110,7 @@ export default {
     this.selectors.form = document.getElementById('contact-form');
     this.selectors.name = document.getElementById('name');
     this.selectors.email = document.getElementById('email');
+    this.selectors.phone = document.getElementById('phone');
     this.selectors.subject = document.getElementById('subject');
     this.selectors.message = document.getElementById('message');
   },
@@ -107,6 +120,7 @@ export default {
         form: '',
         name: '',
         email: '',
+        phone: '',
         subject: '',
         message: '',
       },
@@ -114,9 +128,11 @@ export default {
       errors: [],
       ALPHA_REGEX: /^[a-zA-Z]+(?:[\s.]+[a-zA-Z]+)*$/,
       EMAIL_REGEX: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+      PHONE_REGEX: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im,
       contactForm: {
         name: '',
         email: '',
+        phone: '',
         subject: '',
         message: ''
       },
@@ -127,27 +143,32 @@ export default {
     formSubmit() {
       this.showSubmitFeedback = false;
       this.errors = [];
-      if (this.validate()) {
+      // if (this.validate()) {
         this.submitForm()
             .then((result) => {
               this.showSubmitFeedback = true;
               console.log(result);
-              this.submitResponse = `Message Id : ${result.name}. Thank you for contacting me. Your message is received, I will connect with you at the earliest.`;
+              if (result.name) {
+                this.submitResponse = `Message Id : ${result.name}. Thank you for contacting me. Your message is received, I will connect with you at the earliest.`;
+              } else {
+                this.submitResponse = 'Oops, its not your fault. Its me!. Seems like Firebase rules is not relaxed. Please try again later';
+              }
             })
             .catch(error => {
               this.showSubmitFeedback = true;
               this.submitResponse = 'Oops, its not your fault. Its me. Please try again later';
             });
-      }
+      // }
 
     },
 
     validate() {
       const nameError = this.validateText(this.selectors.name, this.contactForm.name, 'Name');
       const emailError = this.validateEmail(this.selectors.email, this.contactForm.email, 'Email');
+      const phoneError = this.validatePhone(this.selectors.phone, this.contactForm.phone, 'Phone');
       const subError = this.validateText(this.selectors.subject, this.contactForm.subject, 'Subject');
       const mesError = this.validateText(this.selectors.message, this.contactForm.message, 'Message');
-      return !nameError && !emailError && !subError && !mesError;
+      return !nameError && !emailError && !subError && !mesError && !phoneError;
     },
 
     validateText(field, value, name) {
@@ -175,11 +196,25 @@ export default {
       }
       return error;
     },
+
+    validatePhone(field, value, name) {
+      let error;
+      if (value === '') {
+        error = this.setErrorFor(field, name + ' cannot be blank');
+      } else if (!value.match(this.PHONE_REGEX)) {
+        error = this.setErrorFor(field, name + ' is not valid');
+      } else {
+        error = this.setSuccessFor(field);
+      }
+      return error;
+    },
+
     setSuccessFor(input) {
       const formControl = input.parentElement;
       formControl.className = 'form-group success';
       return false;
     },
+
     setErrorFor(input, message) {
       const formControl = input.parentElement;
       const small = formControl.querySelector('small');
