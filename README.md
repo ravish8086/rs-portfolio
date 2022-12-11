@@ -24,4 +24,3 @@ A Portfolio website build using Vue 3 in Vite.
 
 - Hosted - https://rs-portfolio-dd94b.web.app/
 - Code - https://github.com/ravish8086/rs-portfolio
-- 
