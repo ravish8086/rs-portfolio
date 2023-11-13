@@ -11,7 +11,7 @@
             </div>
             <div class="media">
               <i class="material-icons">call</i>
-              <div class="media-body"><span>512-915-2055</span></div>
+              <div class="media-body"><span>800-800-8000</span></div>
             </div>
             <div class="media">
               <a href="https://github.com/ravish8086" target="_blank" class="icon-block">
